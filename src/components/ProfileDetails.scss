@@ -1,0 +1,84 @@
+.background {
+    background-color: #2A2E37;
+}
+
+
+.title {
+    color: lavender;
+}
+
+.name-style {
+    margin-top: 20px;
+    color: lavender;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bio-style {
+    color: rgb(140, 140, 223);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    left: 48% !important;
+    bottom: 48% !important;
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+.text {
+    color: rgb(140, 140, 223);
+    text-align: center;
+}
+
+.joined-title {
+    float: left;
+    width: 25%;
+    color: lavender;
+    text-align: center;
+    margin-bottom: 0px;
+    left: 48% !important;
+    bottom: 48% !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.joined-text {
+    float: left;
+    left: 48% !important;
+    bottom: 48% !important;
+    color: rgb(194, 146, 195);
+    text-align: center;
+    margin-bottom: 0px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stats-title {
+    float: left;
+    left: 48% !important;
+    bottom: 48% !important;
+    margin-left: 50px;
+    color: lavender;
+    margin-top: 0px;
+    text-align: center;
+    width: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stats-text {
+    left: 48% !important;
+    bottom: 48% !important;
+    float: left;
+    text-align: center;
+    color: rgb(194, 146, 195);
+    width: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
