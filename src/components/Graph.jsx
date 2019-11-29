@@ -12,6 +12,8 @@ const Graph = (props) => {
                 values: props.repoSize,
                 labels: props.repoNames,
                 type: 'pie',
+                textinfo: "label+percent",
+                textposition: "outside",
                 textfont: {
                     color: 'rgb(230, 230, 250)'
                 }
@@ -22,8 +24,13 @@ const Graph = (props) => {
                 height: 400, 
                 paper_bgcolor:'rgba(0,0,0,0)',
                 plot_bgcolor:'rgba(0,0,0,0)',
+                title: 'Repo Languages',
+                font: {
+                    color: 'rgb(230, 230, 250'
+                },
+                showlegend: false,
+                
             }}
-            
         />
         </div>
     );

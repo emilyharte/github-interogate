@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import ProfileDetails from '../ProfileDetails.jsx';
 import axios from 'axios';
 import lda from '../../lda';
-import './App.scss';
 import LanguageList from '../LanguageList.jsx';
+import Repos from '../Repos.jsx';
+import SortedList from '../SortedList.jsx';
+import './App.scss';
+
 
 class App extends Component {
   constructor() {
@@ -12,6 +15,7 @@ class App extends Component {
       gitun: 'No username',
       infoclean : '',
       info: '',
+      repos: '',
       formData: {
         username: '',
       },
@@ -52,9 +56,18 @@ class App extends Component {
       }
       this.setState({
         repitems: sortedItems.slice(0,10),
-        replanguagecount: dictrlc,
+        replanguagecount: dictrlc
       })}).catch((err) => { console.log(err); 
     }); 
+
+    axios.get('https://api.github.com/users/'+this.state.formData.username+'/repos').then(
+            response => {
+                this.setState({
+                    repos: response.data
+                })
+            }
+        ).catch((err) => { console.log(err); 
+        });    
           
     axios.get('https://api.github.com/users/'+this.state.formData.username+'/starred')
     .then(response => {
@@ -121,8 +134,18 @@ class App extends Component {
             onChange={this.handleFormChange}
             />
           </form> 
+          <div>
           <ProfileDetails infoclean={this.state.infoclean}/>
-          <LanguageList langslist={this.state.replanguagecount}/>
+          </div>
+          <div> 
+          <LanguageList repos={this.state.repos}/>
+          </div>
+          <div>
+          <Repos repos={this.state.repos} />
+          </div>
+          <div>
+          <SortedList repos={this.state.repos} />
+          </div>
         </div>
       : <div>
       <h2 class="title">Not the GitHub Analytics Tool You Need</h2>

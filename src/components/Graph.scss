@@ -1,7 +1,15 @@
 $background-color: rgb(42, 46, 55);
 
 .pie {
-    background-color: $background-color;
-    margin-top: 50px;
-    margin-left: 325px;
+    margin-top: 150px;
+}
+
+.repos {
+    float: left;
+    margin-top: -400px;
+    margin-left: 800px;
+}
+
+.line {
+    margin-left: 120px;
 }

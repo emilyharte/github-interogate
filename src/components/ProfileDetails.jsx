@@ -3,6 +3,7 @@ import Moment from 'react-moment';
 import './ProfileDetails.scss';
 
 
+
 const ProfileDetails = (props) => {
     return (
       <div class="background">
@@ -39,13 +40,6 @@ const ProfileDetails = (props) => {
         </div>
         <div>
           {props.infoclean.following ? <div><p class="stats-title">Following:</p><p class="stats-text">{props.infoclean.following}</p></div> : null }
-        </div>
-        <div>
-          {props.infoclean.html_url ? <div><p class="stats-title"><a href={props.infoclean.html_url} target="_blank">View on GitHub</a></p></div> : null }
-        </div>
-        <div>
-          {props.infoclean.login ? <div>{ <img src={"http://ghchart.rshah.org/"+props.infoclean.login} alt="Github chart" />
-        }<br/><a href="https://ghchart.rshah.org/" target="_blank">Source for GitHub Chart API</a></div> : null }
         </div>
       </div>
     )};
