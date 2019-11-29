@@ -9,6 +9,10 @@ The second part of the assignment was to again interrogate the GitHub API to bui
 
 I used the Plotly JS library to implement the graphs in my project. Plotly is built on the d3 JS library and stack.gl. 
 
-![GitHub API App Demo](gif/GithubScreenRecord.gif)
+![GitHub API App Demo 1](gif/GithubScreenRecord1.gif)
+
+![GitHub API App Demo 2](gif/GithubScreenRecord2.gif)
+
+![Github API App Demo 3](gif/GithubScreenRecord3.gif)
 
 
